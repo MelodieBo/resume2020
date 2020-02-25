@@ -1,4 +1,5 @@
 #sideNav {
+  background-color: $bg;
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
     letter-spacing: 0.05rem;
@@ -19,12 +20,8 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    background: -webkit-linear-gradient(45deg, #399E98 25%, #3aa19b 25%, #3aa19b 50%, #399E98 50%, #399E98 75%, #3aa19b 75%, #3aa19b);
-    background: -moz-linear-gradient(45deg, #399E98 25%, #3aa19b 25%, #3aa19b 50%, #399E98 50%, #399E98 75%, #3aa19b 75%, #3aa19b);
-    background: -o-linear-gradient(45deg, #399E98 25%, #3aa19b 25%, #3aa19b 50%, #399E98 50%, #399E98 75%, #3aa19b 75%, #3aa19b);
-    background: linear-gradient(45deg, #399E98 25%, #3aa19b 25%, #3aa19b 50%, #399E98 50%, #399E98 75%, #3aa19b 75%, #3aa19b);
-      background-size:100px 100px;
-
+    background-size:100px 100px;
+    background: linear-gradient(#C5D4DB, #DBDEDC);
     width: $sidebar-base-width;
     height: 100vh;
     .navbar-brand {

@@ -203,3 +203,7 @@ a {
 a:hover, a:focus, a:active {
   color: #2e3132;
 }
+
+.text-warning {
+  color: #C9A66B !important;
+}

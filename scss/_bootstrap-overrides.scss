@@ -2,9 +2,6 @@
   background-color: #C5D4DB !important;
 }
 
-.text-primary {
-  color: $yellow !important;
-}
 
 a {
   color: $primary;
@@ -12,6 +9,19 @@ a {
   &:focus,
   &:active {
     color: darken($primary, 15%);
+  }
+}
+
+.text-primary {
+  color: $yellow !important;
+}
+
+a.yellow{
+  color: $yellow!important;
+  &:hover,
+  &focus,
+  &active {
+    color: $primary!important;
   }
 }
 

@@ -21,25 +21,29 @@
     display: flex;
     flex-direction: column;
     background-size:100px 100px;
-    background: linear-gradient(#C5D4DB, #DBDEDC);
     width: $sidebar-base-width;
     height: 100vh;
     .navbar-brand {
       display: flex;
-
+      justify-content: center;
+      align-items: flex-start;
       margin: auto auto 0;
       padding: 0.5rem;
       .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        max-width: 11rem;
+        max-height: 11rem;
+        position: absolute; // Les images vont se superposer
+        left: 3rem; // A gauche
+        top: 6rem; // et en haut de la feuille
+        display: none; // Par défaut, elles ne seront pas affichées
       }
     }
     .navbar-collapse {
       display: flex;
       align-items: flex-start;
       flex-grow: 0;
-
+      position: absolute;
+      top: 18rem;
       width: 100%;
       margin-bottom: auto;
       .navbar-nav {

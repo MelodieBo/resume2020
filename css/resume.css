@@ -47,7 +47,7 @@ p.lead {
 }
 
 .handscript {
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Seaweed Script', cursive;
   font-size: 1.5rem;
   color: #53575A;
   text-transform: lowercase;
@@ -78,7 +78,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #DAD1BE;
+  background-color: #11182b;
 }
 
 .dev-icons {
@@ -86,11 +86,11 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #DAD1BE;
+  color: #11182b;
 }
 
 #sideNav {
-  background-color: linear-gradient(#C5D4DB, #DBDEDC);
+  background-color: #11182b;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -117,8 +117,6 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     background-size: 100px 100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#C5D4DB), to(#DBDEDC));
-    background: linear-gradient(#C5D4DB, #DBDEDC);
     width: 17rem;
     height: 100vh;
   }
@@ -126,13 +124,22 @@ p.lead {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin: auto auto 0;
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-width: 11rem;
+    max-height: 11rem;
+    position: absolute;
+    left: 3rem;
+    top: 6rem;
+    display: none;
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -144,6 +151,8 @@ p.lead {
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
     flex-grow: 0;
+    position: absolute;
+    top: 18rem;
     width: 100%;
     margin-bottom: auto;
   }
@@ -192,16 +201,24 @@ section.resume-section .resume-item .resume-date {
   background-color: #C5D4DB !important;
 }
 
-.text-primary {
-  color: #C9A66B !important;
-}
-
 a {
   color: #53575A;
 }
 
 a:hover, a:focus, a:active {
   color: #2e3132;
+}
+
+.text-primary {
+  color: #C9A66B !important;
+}
+
+a.yellow {
+  color: #C9A66B !important;
+}
+
+a.yellow:hover, a.yellowfocus, a.yellowactive {
+  color: #53575A !important;
 }
 
 .text-warning {
